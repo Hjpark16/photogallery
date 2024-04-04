@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+header {
+    background-image: url('https://media.istockphoto.com/id/481953637/video/sunlight-seen-through-trees.jpg?s=640x640&k=20&c=GttJ25jsDqSkW28wfgWgpQ9Sc4dYXhknO8vSzByo1LI=');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 500%; /* 5 times bigger */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav {
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: green;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: green;
+    color: yellow;
+}
+main {
+    padding: 20px;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.photo {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid green;
+    transition: transform 0.3s ease;
+}
+.photo:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
